@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uttar Pradesh Blog</title>
+    
+    <style>
+        .home-button {
+            padding: 10px 20px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        
+        .home-button:hover {
+            background-color: darkblue;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 10px;
+            background-color: #f1f1f1;
+            position: relative;
+        }
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: auto;
+            }
+        .logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: auto;
+        }
+
+        header::before {
+            content: "";
+            background-image: url('https://i.imgur.com/DQE2Aq5.jpg');
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 1;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        header h1, header h2, header p {
+            position: relative;
+            z-index: 2;
+            margin: 5px;
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            color: #0000FF;
+            text-shadow: 2px 2px 0 #000000, 2.5px 2.5px 0 #f1f1f1;
+        }
+
+        header h2 {
+            font-size: 1.8rem;
+            color: #87CEEB;
+            text-shadow: 3px 3px 0 #333333;
+        }
+
+        header p {
+            font-size: 1.8rem;
+            color: #0000FF;
+            text-shadow: 1px 1px 0 #000000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0000FF;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            background-color: darkblue;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: ghostwhite;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: left;
+            padding: 10px;
+            background-color: #0000FF;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .blog-image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            display: none;
+            color: #333;
+        }
+
+        .read-more {
+            cursor: pointer;
+            color: blue;
+            text-decoration: underline;
+        }
+
+        .colored-text {
+            color: green;
+        }
+    </style>
+
+    <script>
+        function toggleContent(id) {
+            const content = document.getElementById(id);
+            if (content.style.display === "none") {
+                content.style.display = "block";
+            } else {
+                content.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+   
+<header>
+    <img src="https://imgur.com/Gtot2Rk.jpg" alt="Logo" class="logo">
+    <h1>Uttar Pradesh Blog</h1>
+    <h2>आपके विचारों का मंच</h2>
+    <p>नई कहानियाँ और विचार साझा करें।</p>
+</header>
+
+<nav>
+    <a href="index.html" class="home-button">होम</a>
+    <a href="#about">हमारे बारे में</a>
+    <a href="#contact">संपर्क करें</a>
+</nav>
+
+<main>
+    <section>
+         <h1> <p><span class="read-more" onclick="toggleContent('content2')">ब्लाग देखें </span></p>
+
+        <div id="content2" class="content">
+        ब्लाग देखें </h1>
+        <p> <b>ब्लाग देखने के लिए नीचे कहानी पढ़ें पर क्लिक करें</b> </p>
+        <h2 class="colored-text">(1.) एक पति-पत्नी का रिश्ता </h2>
+        <img src="https://imgur.com/7dePoxM.jpg" alt="Blog Image" class="blog-image">
+        
+        <h1><p><span class="read-more" onclick="toggleContent('content1')">कहानी पढ़ें</span></p></h1>
+        <div id="content1" class="content">
+     <p><b> एक विवाह </b> </p>
+        <p>भूमिका: राजू  और सिमा की शादी की तैयारी धूमधाम से चल रही थी। राजू एक युवा और महत्वाकांक्षी युवक था, जबकि सिमा एक सुशिक्षित और समर्पित लड़की थी। दोनों की शादी को लेकर परिवार और दोस्तों में खासा उत्साह था। लेकिन क्या शादी केवल एक रस्म थी, या यह एक नई शुरुआत थी?</p>
+
+        <p><b>पहला दृश्य:</b> शादी के दिन, जब सिमा अपने ब्राइडल ड्रेस में सज रही थी, उसे अपनी माँ की बातें याद आईं। उसकी माँ ने कहा था, "बेटा, शादी का मतलब केवल एक नए रिश्ते की शुरुआत नहीं है, बल्कि यह एक नई जिम्मेदारी भी है।" सिमा ने इस बात को ध्यान में रखा और खुद को तैयार किया कि वह अपने नए जीवन के लिए तैयार है।
+
+
+        <!-- Image above the first blog post -->
+        <img src="https://imgur.com/bwPyve3.jpg" alt="Blog Image" class="blog-image"><p/>
+
+
+         <p> <b>दूसरा दृश्य:</b> राजू भी इस दिन को लेकर बहुत उत्सुक था, लेकिन उसकी सोच थोड़ी अलग थी। वह सोच रहा था कि शादी के बाद उसकी जिंदगी में क्या बदलाव आएगा। उसने अपने दोस्तों से सुना था कि शादी के बाद जिंदगी थोड़ी बोरिंग हो जाती है, लेकिन वह चाहकर भी उस ख्याल को अपने मन से निकाल नहीं पा रहा था।
+
+        <p> <b>तीसरा दृश्य:</b> शादी की रस्में धूमधाम से शुरू हुईं। सभी मेहमान खुश थे, और परिवार वाले एक-दूसरे को बधाई दे रहे थे। जैसे ही सिमा और राजू ने एक-दूसरे को वरमाला पहनाई, दोनों के दिलों में एक नई उम्मीद जागी। राजू ने महसूस किया कि सिमा की मुस्कान ने उसके दिल को छू लिया था। वहीं, सिमा को राजू का आत्मविश्वास बहुत पसंद आया।</p>
+        
+        <img src="https://imgur.com/asgFz6d.jpg" alt="Blog Image" class="blog-image">
+        </p>
+
+
+        <p><b>चौथा दृश्य:</b> शादी के बाद, जब वे हनीमून पर गए, तो राजू ने सिमा के साथ समय बिताते हुए उसकी वास्तविकता को समझा। वह केवल एक पत्नी नहीं थी, बल्कि एक साथी भी थी। वे एक-दूसरे के साथ लंबे समय तक बातें करते रहे, अपने सपनों, योजनाओं और पसंद-नापसंद को साझा करते रहे। इस दौरान राजू ने महसूस किया कि सिमा की सोच और दृष्टिकोण ने उसकी जिंदगी को कितना बदल दिया है।
+
+        <b>पाँचवां दृश्य:</b> एक रात, जब वे चाँद की रोशनी में टहल रहे थे, राजू ने सिमा से कहा, "तुमसे शादी करके मुझे ऐसा लगता है कि मैंने अपनी जिंदगी का सबसे बड़ा फैसला किया है।" सिमा मुस्कुराई और 
+
+        कहा, "शादी सिर्फ एक नए रिश्ते की शुरुआत नहीं, बल्कि एक नई यात्रा है। हमें इसे एक साथ तय करना है।"
+
+
+         <img src="https://i.imgur.com/D3myEMX.jpg" alt="Blog Image" class="blog-image"> </p>
+
+         <p><b>समापन:</b> वापसी के बाद, राजू और सिमा ने अपने-अपने करियर में एक-दूसरे का समर्थन किया और नए सपनों के साथ आगे बढ़े। उनकी शादी ने उन्हें एक-दूसरे को समझने का मौका दिया और उन्हें यह सिखाया कि प्यार केवल एक एहसास नहीं, बल्कि एक गहरा संबंध है।
+
+राजू और सिमा ने अपने जीवन में शादी को एक नई शुरुआत के रूप में देखा, और उनके रिश्ते ने उन्हें प्यार और जिम्मेदारी के महत्व को समझाया। इस प्रकार, उन्होंने अपनी शादी को न केवल एक रस्म, बल्कि एक नई कहानी की शुरुआत बना दिया।</p>
+
+       <p> <img src="https://i.imgur.com/DQE2Aq5.jpg" alt="Blog Image" class="blog-image">
+ <b>सीख:</b>
+
+शादी सिर्फ एक बंधन नहीं, बल्कि एक साझेदारी है, जिसमें प्यार, समझ और जिम्मेदारी का होना आवश्यक है। सही साथी के साथ, जीवन की हर मुश्किल को आसान बनाया जा सकता है।</p>
+     <p><i><b>लेखक-</b> करन कुमार </i></p>
+
+        </div>
+    </section>
+
+    <section>
+        <h2 class="colored-text">(2.) बेबसी से उम्मीद तक का सफ़र </h2>
+
+        <p><b>ये कहानी है, उत्तर प्रदेश के, मिर्जापुर जिले के एक छोटे से गांव चांदीपुर की राधा की" जिसकी ज़िन्दगी जन्म से लेकर आखिरी सांस  तक तकलीफों से भरी थी |</b></p>
+        <img src="https://imgur.com/l5iQVdY.jpg" alt="Blog Image" class="blog-image">
+        <h1><p><span class="read-more" onclick="toggleContent('content3')">कहानी पढ़ें</span></p></h1>
+        <div id="content3" class="content">
+            <p><p> <b>राधा</b> जन्म मिर्जापुर जिले के एक छोटे से गांव चांदीपुर में सन १९८८(1988) में हुआ,,|| राधा का जन्म समाज के ठुकराए गए अंधेरों में हुआ था। एक नाजायज़ औलाद होने के कारण उसे दुनिया ने अपनाने से इंकार कर दिया। 
+     </p>
+             <img src="https://imgur.com/11kyC0a.jpg" alt="Blog Image" class="blog-image">
+<p>एक बूढ़े भिखारी ने उसे एक कूड़े के ढेर में पाया जो एक जंगल के बगल में था। उसने उसे देखा और इग्नोर कर दिया ये सोचकर कि मेरी जिंदगी वैसे ही बड़े मुश्किल से चल रही है, इस बच्चे को कैसे सम्हालुंगा, लेकिन कुछ दूर जाने के बाद उसे अहसास हुआ कि जल्दी ही रात होने वाली है, और जंगल से जानवर निकले लगेंगे और इसे खा जाएंगे, तो उस भिखारी ने ना चाहते हुए भी उस बच्ची को और अपनी टूटी-फूटी झोपड़ी में ले आया। उसके पास देने को ज्यादा कुछ नहीं था, लेकिन अपनी ममता से उसने राधा की जिंदगी संवारने की ठानी और  उसको नाम दिया । </p>
+<img src="https://imgur.com/PBDIdab.jpg" alt="Blog Image" class="blog-image">
+और आठ साल तक उसने अपनी क्षमताओं से अधिक राधा का ध्यान रखा। लेकिन उसकी बढ़ती उम्र और गिरती सेहत के कारण एक दिन वो दुनिया से विदा हो गया, और राधा को फिर से अकेला छोड़ गया।</p>
+<img src="https://imgur.com/raRhQVL.jpg" alt="Blog Image" class="blog-image">
+<p>अब <b>राधा </b> पर जिंदगी की मुश्किलें और भी बढ़ गई थीं। एक छोटी, कमजोर लड़की के लिए अकेले रहना आसान नहीं था। हर दिन उसे एक नए संघर्ष का सामना करना पड़ता। मोहल्ले के कई लोग उस पर तिरस्कार की नजर डालते, कुछ लोग उसे बुरी नीयत से देखते। उसे हर वक्त अपने चारों ओर खतरे का अहसास रहता। वह हमेशा डरी हुई रहती थी। छोटी उम्र में ही उसे दुनिया की बुराइयों का सामना करना पड़ा, जिसने उसे असमय ही समझदार बना दिया।</p>
+    <img src="https://imgur.com/IDngTOL.jpg" alt="Blog Image" class="blog-image">
+<p>और अब <b>राधा</b>  के पिता के गुजर जाने के बाद उसे बहुत सारी कठिनाइयों का सामना करना पड़ा, हर दिन उसे किसी दूसरे व्यक्ति के यहां काम करना पड़ता और जिससे उसे कुछ पैसे मिले खाना मिलता। और वहीं सो जाती थी। क्योंकि उसकी झोपडी सहर से बगल में थी ओर अकेला कैसी रहती।</p>
+
+<img src="https://imgur.com/Pob0bDn.jpg" alt="Blog Image" class="blog-image">
+एक रात <b>राधा</b> सो लेटी थी और आसमान की ओर देख रही थी उसकी आंखों में अंशु थे, चेहरे पर बेबसी अपने पिता को याद कर रही थी, और  मन ही मन ये बोल रही थी कि बापू आपने  मुझे अकेला क्यों छोड़ दिया, मुझे भी अपने साथ ले जाते क्या करूंगी मैं इस दुनिया में रहकर... ।</p>
+<img src="https://imgur.com/VkJTwwl.jpg" alt="Blog Image" class="blog-image">
+<p>ऐसे ही काम करते करते अब 9 साल बीत गए हैं और अब राधा 17 साल की एक खूबसूरत लड़की बन गई है,
+<img src="https://imgur.com/45hDf2N.jpg" alt="Blog Image" class="blog-image"> और उसकी झोपडी   अब एक छोटा सा घर बन गया है, और  उसके बगल में और भी कुछ घर बन गए हैं। </p>
+
+<p>तो अब <b>राधा</b> अपने घर में रहती लेकिन अब भी उसे रलवे स्टेशन पर काम मिल गया है । और इस नौ साल के सफर में उसे कई सारी कठिनाइयों का सामना करना पड़ा था।</p>
+<img src="https://imgur.com/iwa3B7I.jpg" alt="Blog Image" class="blog-image">
+
+ <p>कई बार कुछ लोग उससे झूठे वादे कर उसकी मासूमियत का फायदा उठाने की कोशिश करते। लेकिन उसने ठान लिया था कि वह किसी भी कीमत पर अपनी इज्जत और आत्म-सम्मान की रक्षा करेगी। उसे बचपन में उस बूढ़े भिखारी से जो प्यार और विश्वास मिला था, वही उसे हिम्मत देता था कि वह हर मुश्किल का सामना कर सके।</p>
+<img src="https://imgur.com/3uxSGfl.jpg" alt="Blog Image" class="blog-image">
+
+<p>अब राधा के पिता को गुजरे हुए पूरे दस वर्ष हो गए हैं और अब राधा 18 वर्ष की हो गयी, और रेलवे स्टेशन पर नौकरी करती है  है लेकिन उसे ज्यादा पैसे नहीं मिलता, लेकिन वह अब अच्छी ज़िन्दगी जीने लगी है |</p>
+ <img src="https://imgur.com/1C95ZPo.jpg" alt="Blog Image" class="blog-image">
+
+<p>अब राधा के जीवन में फिर से एक नया मोड आने वाला है, जब राधा को स्टेशन पर एक लड़का टकराता है, और वो राधा को देखते ही रह जाता जाता है|
+राधा आगे बढ़ जाती है, वो पीछे मुड़कर राधा कप देखता रहता है |</p>
+<p>कहानी अभी अधूरी है...! 
+    <p><h3 class="colored-text">Comming soon... </h3>  <b>एक साल बाद.... राधा एक कमरे में अकेले पड़ी रो रही है, चेहरा सूखा हुआ, 
+    आँखों से अंशु की धारा बह रही है......| </b> </p>
+<p>Aurthor।</p></p>
+<p>                                      <h4 class="colored-text"> <i>Author<i/> लेखक:- करन कुमार  </p>
+        </div>
+
+    </section>
+<p> <h3> Overview of Uttar Pradesh</h3>
+Uttar Pradesh, the heart of India, is a land of epics, holy rivers, ancient cities and pilgrimage.
+
+In modern times, it is emerging as a driver of the nation's economy with its network of expressways, industrial corridors, international airports, centers of educational and medical excellence, and an exporter of indigenous products.
+
+Since the times of Lord Rama, Lord Krishna, Gautam Buddha and Lord Mahavira, the state has been the center of cultural and intellectual brilliance.
+
+Today, with its robust infrastructure and a proactive leadership, the state offers the most investor friendly environment for a better future for its people and the entire country. </p>
+ 
+       <p> <img src="https://imgur.com/nrInFdB.jpg" alt="Blog Image" class="blog-image"> </p>
+
+    <section>
+ <h><p><span class="read-more" onclick="toggleContent('content4')">waiting for next blog</span></p></h>
+        <div id="content4" class="content"> 
+            <p>अलगी कहानी के लिए इंतज़ार करें |</p>
+        </div>
+        
+    </section>
+</main>
+
+<footer>
+    <p>Contact:</p>
+    <p>Email: karanjohn08@gmail.com</p>
+    <p>Copyright &copy; 2024 Karan John Uttar Pradesh Blogging. All rights reserved.</p>
+    <p>For any query regarding this website, please contact the "Web Information Manager"
+Sr karan Kumar (In-charge, Computer) Contact No.: +91-0000981664, Email ID: karanjohn08@gmail.com
+
+Last Updated On - 14 November 2024 | 01:05 AM</p>
+</footer>
+
+</body>
+</html>
