@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uttar Pradesh Blog</title>
-    
+    <title> Multiple Paragraph Colors </title>
+
     <style>
         .home-button {
             padding: 10px 20px;
@@ -13,7 +14,7 @@
             text-decoration: none;
             border-radius: 5px;
         }
-        
+
         .home-button:hover {
             background-color: darkblue;
         }
@@ -27,23 +28,18 @@
 
         header {
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             align-items: center;
             padding: 10px;
             background-color: #f1f1f1;
             position: relative;
+            flex-wrap: wrap;
         }
+
         .logo {
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            margin-right: auto;
-            }
-        .logo {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            margin-right: auto;
         }
 
         header::before {
@@ -52,11 +48,11 @@
             background-size: cover;
             background-position: center;
             position: absolute;
-            top: 1;
+            top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            opacity: 0.1;
+            opacity: .5;
             z-index: 1;
         }
 
@@ -67,19 +63,19 @@
         }
 
         header h1 {
-            font-size: 3.5rem;
+            font-size: 2.5rem;
             color: #0000FF;
             text-shadow: 2px 2px 0 #000000, 2.5px 2.5px 0 #f1f1f1;
         }
 
         header h2 {
-            font-size: 1.8rem;
+            font-size: 1.2rem;
             color: #87CEEB;
             text-shadow: 3px 3px 0 #333333;
         }
 
         header p {
-            font-size: 1.8rem;
+            font-size: 1rem;
             color: #0000FF;
             text-shadow: 1px 1px 0 #000000;
         }
@@ -87,7 +83,7 @@
         nav {
             display: flex;
             justify-content: center;
-            background-color: #0000FF;
+            background-color: #454545;
             padding: 10px 0;
         }
 
@@ -114,12 +110,13 @@
             margin-bottom: 20px;
         }
 
-        footer {
+        footer  {
             text-align: left;
             padding: 10px;
             background-color: #0000FF;
             color: white;
             margin-top: 20px;
+
         }
 
         .blog-image {
@@ -142,6 +139,30 @@
         .colored-text {
             color: green;
         }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: center;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+            header h2 {
+                font-size: 1.5rem;
+            }
+            header p {
+                font-size: 1rem;
+                text-align: center;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                margin: 5px 0;
+            }
+        }
     </style>
 
     <script>
@@ -156,22 +177,107 @@
     </script>
 </head>
 <body>
-   
-<header>
-    <img src="https://imgur.com/Gtot2Rk.jpg" alt="Logo" class="logo">
-    <h1>Uttar Pradesh Blog</h1>
-    <h2>आपके विचारों का मंच</h2>
-    <p>नई कहानियाँ और विचार साझा करें।</p>
-</header>
+    <header>
+        <img src="https://imgur.com/Gtot2Rk.jpg" alt="Logo" class="logo">
+        <h1>Uttar Pradesh Blog</h1>
+        <h2>आपके विचारों का मंच</h2>
+        <p>नई कहानियाँ और विचार साझा करें।</p>
+    </header>
 
-<nav>
-    <a href="index.html" class="home-button">होम</a>
-    <a href="#about">हमारे बारे में</a>
-    <a href="#contact">संपर्क करें</a>
-</nav>
+    <nav>
+        <a href="index.html" class="home-button">होम</a>
+        <a href="#about">हमारे बारे में</a>
+        <a href="#contact">संपर्क करें</a>
+    </nav>
 
-<main>
-    <section>
+    <main>
+       <section>
+           <P> <h2 class="colored-text">अंधे सपनों की दुनिया </h2></P>
+<p><b><p style="color: #800020;">ये कहानी है उत्तर प्रदेश के भींगा जिला गांव चहलवा के राघव की, जो जन्म से अंधा था।</b></p>
+<h3> प्रस्तावना </h3>
+<img src="https://i.imgur.com/iVsknXl.jpg" alt="Blog Image" class="blog-image">
+      <p> राघव बचपन से ही अंधा था। उसने कभी सूरज को चमकते हुए नहीं देखा, न ही रंगों की दुनिया को महसूस किया। लेकिन वह अपनी छोटी-सी दुनिया में खुश था। राघव के सपने बाकी लोगों से अलग थे। जहाँ लोग रंगीन दृश्यों दृश्यों में खो जाते हैं, राघव के सपने आवाज़ों, गंधों और स्पर्श से भरे होते थे। लेकिन एक रात, उसे ऐसा सपना आया जिसने उसकी ज़िंदगी बदल दी।
+
+---</p>
+
+<p><h3>सपने की शुरुआत</h3></p>
+<p>एक रात, राघव ने खुद को एक अनजान जंगल में पाया। वह आँखें नहीं खोल सकता था, लेकिन चारों ओर से पक्षियों की चहचहाहट, बहते झरने की आवाज़ और हवा की सरसराहट महसूस कर सकता था। उसने अपने हाथ बढ़ाए और महसूस किया कि उसके आसपास फूल खिले हुए थे। उनके पास से आती खुशबू ने उसे मंत्रमुग्ध कर दिया।
+
+सपने में उसने अचानक एक बच्चे की हंसी सुनी। वह हंसी बहुत परिचित थी। वह आवाज़ उसके बचपन के दोस्त अनुज की थी, जिसे उसने वर्षों से नहीं सुना था।
+
+
+---</p>
+
+<h3>रहस्यमय गाइड</h3>
+<p>सपने में राघव ने एक स्पर्श महसूस किया। किसी ने उसका हाथ पकड़कर कहा, "चलिए, आपको एक नई दुनिया दिखाता हूँ।"
+राघव ने पूछा, "तुम कौन हो?"
+उसने उत्तर दिया, "मैं तुम्हारे सपनों का संरक्षक हूँ। मैं तुम्हें वह चीजें दिखाऊंगा, जो तुम्हारी आत्मा देख सकती है।"
+
+
+---</p>
+
+<h3>सपनों की अनोखी यात्रा</h3>
+<p>उस गाइड ने राघव को एक नदी के किनारे ले जाकर कहा, "यहाँ अपनी आँखें खोलो।"
+राघव ने हैरानी से कहा, "लेकिन मैं देख नहीं सकता।"
+गाइड ने मुस्कुराते हुए कहा, "देखना केवल आँखों से नहीं होता। तुम अपनी आत्मा से देख सकते हो।"
+
+तभी राघव को लगा कि उसने पहली बार प्रकाश महसूस किया है। यह कोई दृश्य नहीं था, बल्कि एक एहसास था—सूरज की गर्मी, पानी की ठंडक, और फूलों की खुशबू से भरी दुनिया। यह उसका खुद का स्वप्नलोक था।
+
+---</p>
+
+<h3>सपने का संदेश</h3>
+<p>जैसे ही सपना खत्म होने को आया, गाइड ने राघव से कहा:
+"तुम्हारी दुनिया अधूरी नहीं है। तुम देख नहीं सकते, लेकिन तुम महसूस कर सकते हो। जो तुम्हारे सपने में है, वह तुम्हारे अंदर हमेशा से था। इसे अपनी ताकत बनाओ।"
+
+राघव नींद से जागा। वह हैरान था। उसे पहली बार अपने अंधेरे में भी एक रोशनी महसूस हुई। उसने समझा कि सपने केवल देखने के लिए नहीं, बल्कि महसूस करने और जीने के लिए होते हैं।
+
+
+---</p>
+
+<h3>निष्कर्ष</h3>
+<p><b>राघव के सपने ने उसे एक नई शुरुआत दी। उसने अपने सपनों के माध्यम से महसूस किया कि जीवन देखने तक सीमित नहीं है, बल्कि अनुभव करने और महसूस करने की कला है।</b></p>
+          <p> <h4 class="colored-text"> <i>Author<i/> लेखक:- करन कुमार  </p>
+
+<h3 class="colored-text">क्या तुम्हें भी कभी ऐसा सपना आया है, जो तुम्हारे दिल को छू गया हो?</h3>
+
+<h2>दिलचस्प तथ्य</h2>
+
+<h3 class="colored-text">1. हर व्यक्ति रात में लगभग 4-6 सपने देखता है, लेकिन हमें केवल कुछ ही याद रहते हैं।</h3>
+
+
+<h3 class="colored-text">2. स्वप्न आमतौर पर 5 से 20 मिनट लंबे होते हैं।</h3>
+
+
+<h3 class="colored-text">3. अंधे लोग भी सपने देखते हैं, लेकिन उनके सपने ज्यादातर ध्वनि, गंध, और स्पर्श पर आधारित होते हैं।</h3>
+---
+
+<h3> <p style="color: #800020;">अगर स्वप्नों को समझने में तुम्हें और मदद चाहिए, तो अपनी सपने की घटनाओं को लिखने की आदत डालो। इससे तुम्हारे दिमाग के संकेत बेहतर समझ में आएंगे। </h3>
+</p>
+           <p>यहाँ आप अपनी राय लिख सकते हैं:</p>
+
+<p></p>    <div class="comment-box">
+        <textarea id="comment" placeholder="अपना कमेंट यहाँ लिखें..."></textarea>
+        <button onclick="submitComment()">सबमिट करें</button>
+    </div>
+
+    <h3>आपके कमेंट:</h3>
+    <div id="comments-section"></div>
+
+    <script>
+        function submitComment() {
+            const comment = document.getElementById('comment').value;
+            if (comment.trim() !== "") {
+                const commentsSection = document.getElementById('comments-section');
+                const newComment = document.createElement('p');
+                newComment.textContent = comment;
+                commentsSection.appendChild(newComment);
+                document.getElementById('comment').value = ""; // Clear the textarea
+            } else {
+                alert("कृपया पहले अपना कमेंट लिखें।");
+            }
+        }
+    </script>
+          </p>
          <h1> <p><span class="read-more" onclick="toggleContent('content2')">ब्लाग देखें </span></p>
 
         <div id="content2" class="content">
@@ -179,7 +285,7 @@
         <p> <b>ब्लाग देखने के लिए नीचे कहानी पढ़ें पर क्लिक करें</b> </p>
         <h2 class="colored-text">(1.) एक पति-पत्नी का रिश्ता </h2>
         <img src="https://imgur.com/7dePoxM.jpg" alt="Blog Image" class="blog-image">
-        
+
         <h1><p><span class="read-more" onclick="toggleContent('content1')">कहानी पढ़ें</span></p></h1>
         <div id="content1" class="content">
      <p><b> एक विवाह </b> </p>
@@ -195,7 +301,7 @@
          <p> <b>दूसरा दृश्य:</b> राजू भी इस दिन को लेकर बहुत उत्सुक था, लेकिन उसकी सोच थोड़ी अलग थी। वह सोच रहा था कि शादी के बाद उसकी जिंदगी में क्या बदलाव आएगा। उसने अपने दोस्तों से सुना था कि शादी के बाद जिंदगी थोड़ी बोरिंग हो जाती है, लेकिन वह चाहकर भी उस ख्याल को अपने मन से निकाल नहीं पा रहा था।
 
         <p> <b>तीसरा दृश्य:</b> शादी की रस्में धूमधाम से शुरू हुईं। सभी मेहमान खुश थे, और परिवार वाले एक-दूसरे को बधाई दे रहे थे। जैसे ही सिमा और राजू ने एक-दूसरे को वरमाला पहनाई, दोनों के दिलों में एक नई उम्मीद जागी। राजू ने महसूस किया कि सिमा की मुस्कान ने उसके दिल को छू लिया था। वहीं, सिमा को राजू का आत्मविश्वास बहुत पसंद आया।</p>
-        
+
         <img src="https://imgur.com/asgFz6d.jpg" alt="Blog Image" class="blog-image">
         </p>
 
@@ -225,7 +331,7 @@
     <section>
         <h2 class="colored-text">(2.) बेबसी से उम्मीद तक का सफ़र </h2>
 
-        <p><b>ये कहानी है, उत्तर प्रदेश के, मिर्जापुर जिले के एक छोटे से गांव चांदीपुर की राधा की" जिसकी ज़िन्दगी जन्म से लेकर आखिरी सांस  तक तकलीफों से भरी थी |</b></p>
+        <p><b>ये कहानी है, उत्तर प्रदेश के, मिर्जापुर जिले के एक छोटे से गांव चांदीपुर की राधा की" जिसकी ज़िन्दगी जन्म से लेकर आखिरी सांस  तक तकलीफों से भरी थी |</b></p>
         <img src="https://imgur.com/l5iQVdY.jpg" alt="Blog Image" class="blog-image">
         <h1><p><span class="read-more" onclick="toggleContent('content3')">कहानी पढ़ें</span></p></h1>
         <div id="content3" class="content">
@@ -261,6 +367,7 @@
     <p><h3 class="colored-text">Comming soon... </h3>  <b>एक साल बाद.... राधा एक कमरे में अकेले पड़ी रो रही है, चेहरा सूखा हुआ, 
     आँखों से अंशु की धारा बह रही है......| </b> </p>
 <p>Aurthor।</p></p>
+</p>
 <p>                                      <h4 class="colored-text"> <i>Author<i/> लेखक:- करन कुमार  </p>
         </div>
 
@@ -273,7 +380,7 @@ In modern times, it is emerging as a driver of the nation's economy with its net
 Since the times of Lord Rama, Lord Krishna, Gautam Buddha and Lord Mahavira, the state has been the center of cultural and intellectual brilliance.
 
 Today, with its robust infrastructure and a proactive leadership, the state offers the most investor friendly environment for a better future for its people and the entire country. </p>
- 
+
        <p> <img src="https://imgur.com/nrInFdB.jpg" alt="Blog Image" class="blog-image"> </p>
 
     <section>
@@ -281,19 +388,40 @@ Today, with its robust infrastructure and a proactive leadership, the state offe
         <div id="content4" class="content"> 
             <p>अलगी कहानी के लिए इंतज़ार करें |</p>
         </div>
-        
+
     </section>
-</main>
+    </main>
+     <p>यहाँ आप अपनी राय लिख सकते हैं:</p>
 
-<footer>
-    <p>Contact:</p>
-    <p>Email: karanjohn08@gmail.com</p>
-    <p>Copyright &copy; 2024 Karan John Uttar Pradesh Blogging. All rights reserved.</p>
-    <p>For any query regarding this website, please contact the "Web Information Manager"
-Sr karan Kumar (In-charge, Computer) Contact No.: +91-0000981664, Email ID: karanjohn08@gmail.com
+    <div class="comment-box">
+        <textarea id="comment" placeholder="अपना कमेंट यहाँ लिखें..."></textarea>
+        <button onclick="submitComment()">सबमिट करें</button>
+    </div>
 
-Last Updated On - 14 November 2024 | 01:05 AM</p>
-</footer>
+    <h3>आपके कमेंट:</h3>
+    <div id="comments-section"></div>
 
+    <script>
+        function submitComment() {
+            const comment = document.getElementById('comment').value;
+            if (comment.trim() !== "") {
+                const commentsSection = document.getElementById('comments-section');
+                const newComment = document.createElement('p');
+                newComment.textContent = comment;
+                commentsSection.appendChild(newComment);
+                document.getElementById('comment').value = ""; // Clear the textarea
+            } else {
+                alert("कृपया पहले अपना कमेंट लिखें।");
+            }
+        }
+    </script>
+    <footer>
+        <p>Contact:</p>
+        <p>Email: karanjohn08@gmail.com</p>
+        <p>Copyright &copy; 2024 Karan John Uttar Pradesh Blogging. All rights reserved.</p>
+        <p>For any query regarding this website, please contact the "Web Information Manager"
+        Sr karan Kumar (In-charge, Computer) Contact No.: +91-0000981664, Email ID: karanjohn08@gmail.com
+        Last Updated On - 16 November 2024 | 05:36 PM</p>
+    </footer>
 </body>
 </html>
